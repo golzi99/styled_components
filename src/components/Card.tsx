@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Card = () => {
     return (
         <div>
@@ -12,7 +13,7 @@ export const Card = () => {
 
 const CardBack = styled.div`
   background-color: aliceblue;
-  border-radius: 10px;
-  max-width: 10rem;
-  max-height: 10rem;
+  border-radius: 1.5rem;
+  width: 25rem;
+  height: 30rem;
 `
