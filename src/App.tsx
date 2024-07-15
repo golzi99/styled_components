@@ -1,26 +1,20 @@
 import React from 'react';
 import './App.css';
 import styled from "styled-components";
-import {StyledBtn, SuperButton} from './components/Button.styled';
+import {StyledBtn} from './components/Button.styled';
 import {Link} from "./components/Link";
-import {Menu} from "./components/Menu";
 
 function App() {
     return (
         <div>
-            <Menu>
-                <ul>
-                    <li><a href="#">menu item 1</a></li>
-                    <li><a href="#">menu item 2</a></li>
-                    <li><a href="#">menu item 3</a></li>
-                </ul>
-            </Menu>
-
             <Box>
-                <StyledBtn as={Link} href={"#"}>LinkComponent</StyledBtn>
-                <StyledBtn as={"a"} href={"#"}>LinkComponent</StyledBtn>
+                {/*<StyledBtn color={"green"} fontSize={'1.5rem'}>Hello</StyledBtn>*/}
+                {/*<StyledBtn color={"yellow"}>Hello</StyledBtn>*/}
+                {/*<StyledBtn fontSize={'40px'}>Hello</StyledBtn>*/}
+
+                <StyledBtn btnType={"primary"} active>Hello</StyledBtn>
+                <StyledBtn btnType={"outlined"}>Hello</StyledBtn>
                 <StyledBtn>Hello</StyledBtn>
-                <SuperButton>SupperButton</SuperButton>
             </Box>
         </div>
     );
