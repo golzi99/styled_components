@@ -3,7 +3,7 @@ import styled, {css} from "styled-components";
 type StyledBtnPropsType = {
     color?: string,
     fontSize?: string
-    btnType?: 'primary' | 'outlined'
+    btnType?: 'primary' | 'outlined' | 'secondary'
     active?: boolean
 }
 
@@ -42,5 +42,20 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
   
     ${props => props.active && css<StyledBtnPropsType>`
     box-shadow: 2px 2px 2px 2px rgba(37, 37, 44, 0.6);
+  `}
+`
+
+export const CardButton = styled.button<StyledBtnPropsType>`
+  border-radius: 5px;
+  border-color: dodgerblue;
+  
+  ${props => props.btnType === "primary" && css<StyledBtnPropsType>`
+    background-color: dodgerblue;
+    color: snow;
+  `}
+
+  ${props => props.btnType === "secondary" && css<StyledBtnPropsType>`
+    background-color: transparent;
+    color: dodgerblue;
   `}
 `

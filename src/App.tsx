@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import styled from "styled-components";
-import {Link} from "./components/Link";
 import {myTheme} from "./styles/Theme.styled";
 import {Card} from "./components/Card";
 
@@ -24,8 +23,8 @@ const Box = styled.div`
   align-items: center;
   gap: 20px;
   
-  @media ${myTheme.media.tablet} {
-    flex-direction: column;
-  }
+  // @media ${myTheme.media.tablet} {
+  //   flex-direction: column;
+  // }
 `
 
