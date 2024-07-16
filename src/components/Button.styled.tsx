@@ -48,7 +48,11 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
 export const CardButton = styled.button<StyledBtnPropsType>`
   border-radius: 5px;
   border-color: dodgerblue;
-  
+
+  &:hover {
+    background-color: #6c67d7;
+  }
+
   ${props => props.btnType === "primary" && css<StyledBtnPropsType>`
     background-color: dodgerblue;
     color: snow;
