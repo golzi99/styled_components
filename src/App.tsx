@@ -9,6 +9,8 @@ function App() {
         <div>
             <Box>
                 <Card></Card>
+                <Card></Card>
+                <Card></Card>
             </Box>
         </div>
     );
@@ -21,10 +23,10 @@ const Box = styled.div`
   height: 100vh;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   
-  // @media ${myTheme.media.tablet} {
-  //   flex-direction: column;
-  // }
+  @media ${myTheme.media.tablet} {
+    flex-direction: column;
+  }
 `
 

@@ -23,6 +23,7 @@ const CardBack = styled.div`
   border-radius: 1.5rem;
   width: 25rem;
   height: 30rem;
+  box-shadow: grey 10px 10px 10px 10px;
   
   img {
     padding: 10px;
